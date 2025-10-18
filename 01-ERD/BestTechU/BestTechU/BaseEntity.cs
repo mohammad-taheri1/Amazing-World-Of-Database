@@ -1,4 +1,4 @@
-﻿namespace DownTownFloral;
+﻿namespace BestTechU;
 
 public class BaseEntity<T>
 {

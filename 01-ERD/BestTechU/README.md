@@ -14,6 +14,8 @@
 - We need to cover `majors`. A `major` is a collection of `courses` that a `student` must complete to graduate with that major.
 - A `major` has name and description and a list of `courses`.
 - `Students` may `enroll` in multiple `majors`.
+- We also need to cover `Professors`. They can be assigned to a `class` as the `instructor`.
+- A `Professor` may has some `qualification` list.
 
 ## Possible Entities:
 
@@ -25,3 +27,5 @@
 - Major
 - StudentAssignedToMajor
 - CourseToMajor
+- Professor
+- ProfessorCourseQualification

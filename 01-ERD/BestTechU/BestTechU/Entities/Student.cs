@@ -1,6 +1,4 @@
-﻿using DownTownFloral;
-
-namespace BestTechU.Entities;
+﻿namespace BestTechU.Entities;
 
 public class Student : BaseEntity<long>
 {
