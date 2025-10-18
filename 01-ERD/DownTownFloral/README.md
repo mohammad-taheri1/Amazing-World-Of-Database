@@ -10,6 +10,8 @@
 - We need Order Price history. Because they can be updated during the time.
 - They might have Delivery drivers. This must be covered.
 - They need to assign a driver to order. drivers will be chose based on the delivery zones.
+- each order is handled by one or more florists. little ones have one. Weddings and events may have more florists.
+- For some orders like for events, we need due time.
 
 ## Possible Entities:
 
@@ -20,3 +22,5 @@
 - SalesRep
 - CustomerToSalesRep
 - Driver
+- Florist
+- FloristAssignment
