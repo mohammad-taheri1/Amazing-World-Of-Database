@@ -8,6 +8,8 @@
 - Type of products sold in each order is important.
 - There might be some Sales Rep. This must be covered.
 - We need Order Price history. Because they can be updated during the time.
+- They might have Delivery drivers. This must be covered.
+- They need to assign a driver to order. drivers will be chose based on the delivery zones.
 
 ## Possible Entities:
 
@@ -17,3 +19,4 @@
 - OrderDetail
 - SalesRep
 - CustomerToSalesRep
+- Driver
