@@ -1,7 +1,11 @@
-﻿namespace FaSkillSchool.Interview.Entities;
+﻿namespace FaSkillSchool.Domain.Interview.Entities;
 
-public class SessionResult : BaseEntity<long>
+public sealed class SessionResult : BaseEntity<long>
 {
+    public long InterviewSessionId { get; set; }
+    public InterviewSession InterviewSession { get; set; } = new();
+    public int CorrectAnswers { get; set; }
+    public double Score { get; set; }
 
     #region Collections
 

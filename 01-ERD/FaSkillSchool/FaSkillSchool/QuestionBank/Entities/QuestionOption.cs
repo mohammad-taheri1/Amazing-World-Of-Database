@@ -1,9 +1,17 @@
-﻿namespace FaSkillSchool.QuestionBank.Entities;
+﻿using FaSkillSchool.Domain.Interview.Entities;
 
-public class QuestionOption : BaseEntity<long>
+namespace FaSkillSchool.Domain.QuestionBank.Entities;
+
+public sealed class QuestionOption : BaseEntity<long>
 {
+    public long QuestionId { get; set; }
+    public Question Question { get; set; } = new();
+    public string OptionText { get; set; } = default!;
+    public bool IsCorrect { get; set; }
 
     #region Collections
+
+    public ICollection<UserAnswer> UserAnswers { get; set; } = [];
 
     #endregion
 

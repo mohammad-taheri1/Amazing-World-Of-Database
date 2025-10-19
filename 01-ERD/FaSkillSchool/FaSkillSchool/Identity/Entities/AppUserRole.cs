@@ -1,7 +1,11 @@
-﻿namespace FaSkillSchool.Identity.Entities;
+﻿namespace FaSkillSchool.Domain.Identity.Entities;
 
-public class AppUserRole : BaseEntity<long>
+public sealed class AppUserRole : BaseEntity<long>
 {
+    public long UserId { get; set; }
+    public AppUser AppUser { get; set; } = new();
+    public long RoleId { get; set; }
+    public AppRole AppRole { get; set; } = new();
 
     #region Collections
 

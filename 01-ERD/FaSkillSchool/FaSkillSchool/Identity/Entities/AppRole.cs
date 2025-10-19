@@ -1,10 +1,15 @@
-﻿namespace FaSkillSchool.Identity.Entities;
+﻿namespace FaSkillSchool.Domain.Identity.Entities;
 
-public class AppRole : BaseEntity<Guid>
+public sealed class AppRole : BaseEntity<Guid>
 {
-	
-	#region Collections
+    public string Name { get; set; } = default!;
+    public string? Description { get; set; }
 
-	#endregion
+
+    #region Collections
+
+    public ICollection<AppUserRole> AppUserRoles { get; set; } = [];
+
+    #endregion
 
 }

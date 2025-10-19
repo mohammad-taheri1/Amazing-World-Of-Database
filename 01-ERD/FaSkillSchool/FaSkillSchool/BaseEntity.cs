@@ -1,6 +1,6 @@
-﻿namespace FaSkillSchool;
+﻿namespace FaSkillSchool.Domain;
 
-public class BaseEntity<T>
+public abstract class BaseEntity<T>
 {
     protected T Id { get; set; }
     protected bool Deleted { get; set; }
