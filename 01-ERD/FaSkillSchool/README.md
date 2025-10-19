@@ -24,15 +24,23 @@
 - `UserAnswer`: stores each user’s answer to a question within a session, including correctness.
 - `SessionResult`: summarizes the total score and performance of a completed session.
 
-### Possible Entities:
+### Possible Entities
 
-- AppUser
-- AppRole
-- Article
-- Category
-- Question
-- QuestionOption
-- QuestionToCategory
-- InterviewSession
-- UserAnswer
-- SessionResult
+### Design
+
+- Domain: `Identity`
+- Schema: `identity`
+- Entities: `AppUser`, `AppRole`, `AppUserRole`
+-----------------------------------------------------------
+- Domain: `KnowledgeBase`
+- Schema: `knowledge`
+- Entities: `Article`, `Category`
+-----------------------------------------------------------
+- Domain: `QuestionBank`
+- Schema: `question`
+- Entities: `Question`, `QuestionOption`, `QuestionCategory`
+-----------------------------------------------------------
+- Domain: `Interview`
+- Schema: `interview`
+- Entities: `InterviewSession`, `UserAnswer`, `SessionResult`
+-----------------------------------------------------------
